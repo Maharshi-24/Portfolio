@@ -1,3 +1,0 @@
-Placeholder for click.wav
-Create a click sound effect for button clicks.
-A short click or tap sound.

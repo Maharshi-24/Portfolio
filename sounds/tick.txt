@@ -1,3 +1,0 @@
-Placeholder for tick.wav
-Create a short tick sound effect (20-50ms) for button hovers.
-Use a simple sine wave or click sound.
