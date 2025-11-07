@@ -2,7 +2,7 @@
 
 // Sound files (placeholders - replace with actual .wav/.mp3 files)
 const sounds = {
-    tick: new Audio('sounds/tick.wav'),
+    hover: new Audio('sounds/hover.wav'),
     whoosh: new Audio('sounds/whoosh.wav'),
     click: new Audio('sounds/click.wav')
 };
@@ -32,7 +32,7 @@ function initSounds() {
     // Button hover sounds
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(btn => {
-        btn.addEventListener('mouseenter', () => playSound('tick'));
+        btn.addEventListener('mouseenter', () => playSound('hover'));
         btn.addEventListener('click', () => playSound('click'));
     });
 

@@ -4,11 +4,13 @@
 function animateHero() {
     const titleLines = document.querySelectorAll('.title-line');
     const subtitle = document.querySelector('.hero-subtitle');
+    const tagline = document.querySelector('.hero-tagline');
     const buttons = document.querySelectorAll('.btn');
 
     // Stagger title lines
     gsap.set(titleLines, { opacity: 0, y: 30 });
     gsap.set(subtitle, { opacity: 0, y: 20 });
+    gsap.set(tagline, { opacity: 0, y: 20 });
     gsap.set(buttons, { opacity: 0, y: 20 });
 
     const tl = gsap.timeline({ delay: 1 });
@@ -17,10 +19,15 @@ function animateHero() {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        stagger: 0.2,
         ease: 'power4.out'
     })
     .to(subtitle, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power4.out'
+    }, '-=0.3')
+    .to(tagline, {
         opacity: 1,
         y: 0,
         duration: 0.6,
@@ -176,6 +183,26 @@ function animateParticles() {
     });
 }
 
+// Experience timeline animation
+function animateTimeline() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    timelineItems.forEach((item, index) => {
+        ScrollTrigger.create({
+            trigger: item,
+            start: 'top 80%',
+            onEnter: () => {
+                gsap.to(item, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: 'power4.out'
+                });
+            }
+        });
+    });
+}
+
 // Initialize all animations
 function initAnimations() {
     createParticles();
@@ -185,4 +212,5 @@ function initAnimations() {
     animateProjectCards();
     animateSkillCards();
     animateParticles();
+    animateTimeline();
 }

@@ -1,11 +1,11 @@
 :root {
-  --bg: #0f0f12;
+  --bg: #0E0E10;
   --bg-secondary: #1a1a1f;
-  --accent: #7b5cff;
-  --accent-hover: #8b6dff;
-  --text: #e2e2e2;
+  --accent: #7B5CFF;
+  --accent-hover: #58C8F5;
+  --text: #E4E4E7;
   --text-secondary: #a0a0a0;
-  --transition: 0.4s ease-in-out;
+  --transition: 0.3s ease-in-out;
   --radius: 12px;
   --shadow: 0 8px 32px rgba(123, 92, 255, 0.1);
   --shadow-hover: 0 12px 48px rgba(123, 92, 255, 0.2);
