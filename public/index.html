@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maharshi Desai - Full Stack Developer specializing in intelligent digital experiences">
+  <title>Maharshi Desai | MindPlane Portfolio</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts - Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- GSAP & Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-text">MINDPLANE</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <h1 class="loader-text">
+        <span class="word">Maharshi</span>
+        <span class="word">Desai</span>
+      </h1>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Maharshi Desai.</h1>
+      <h2>I build intelligent digital experiences.</h2>
+      <p class="subtitle">Full Stack | Flutter | IoT | Backend</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-scroll>
+    <div class="container">
+      <div class="grid">
+        <div class="about-image">
+          <div class="image-placeholder"></div>
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>I'm a passionate full-stack developer with a keen interest in creating seamless digital experiences. My expertise spans across web development, mobile applications, and IoT solutions.</p>
+          <p>With a strong foundation in both frontend and backend technologies, I bring ideas to life through clean code, thoughtful design, and innovative problem-solving.</p>
+          <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or experimenting with creative motion design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-scroll>
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">⚛️</div>
+          <h3>React</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">📱</div>
+          <h3>Flutter</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🟢</div>
+          <h3>Node.js</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🗄️</div>
+          <h3>MongoDB</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🔥</div>
+          <h3>Firebase</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🌐</div>
+          <h3>REST APIs</h3>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🤖</div>
+          <h3>IoT</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" data-scroll>
+    <div class="container">
+      <h2>Featured Work</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Smart Home Dashboard</h3>
+          <p>IoT-enabled dashboard for controlling and monitoring smart home devices with real-time data visualization.</p>
+          <div class="tech-stack">React • Node.js • MQTT • MongoDB</div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+        <div class="project-card">
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
+          <div class="tech-stack">Flutter • Firebase • Stripe API</div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+        <div class="project-card">
+          <h3>Task Management App</h3>
+          <p>Collaborative task management application with real-time updates and team collaboration features.</p>
+          <div class="tech-stack">React • Express • Socket.io • PostgreSQL</div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+        <div class="project-card">
+          <h3>Weather Analytics</h3>
+          <p>Weather forecasting application with data analytics and visualization using machine learning models.</p>
+          <div class="tech-stack">Python • Flask • TensorFlow • Chart.js</div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" data-scroll>
+    <div class="container">
+      <h2>Journey</h2>
+      <div class="timeline">
+        <div class="timeline-line" id="timeline-line"></div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>Full Stack Developer</h3>
+            <h4>Freelance</h4>
+            <p>Building custom web and mobile applications for clients worldwide, specializing in modern tech stacks and scalable solutions.</p>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3>IoT Developer</h3>
+            <h4>Tech Startup</h4>
+            <p>Developed IoT solutions for smart home automation, integrating hardware with cloud-based platforms.</p>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>Backend Developer</h3>
+            <h4>Software Company</h4>
+            <p>Designed and implemented RESTful APIs, database architectures, and server-side logic for enterprise applications.</p>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021</span>
+            <h3>Started Coding Journey</h3>
+            <h4>Self-Taught</h4>
+            <p>Began learning web development and programming fundamentals, building projects and contributing to open source.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-scroll>
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="6" placeholder="Your Message" required aria-label="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Maharshi Desai. All rights reserved.</p>
+    </div>
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/sounds.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
