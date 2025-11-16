@@ -23,7 +23,9 @@ function animateLoader() {
   if (words.length === 0) {
     loader.style.display = 'none';
     animateHero();
-    animateNavbar();
+    setTimeout(() => {
+      animateNavbar();
+    }, 23000); // Delay navbar by 23 seconds
     return;
   }
 
@@ -37,7 +39,9 @@ function animateLoader() {
         onComplete: () => {
           loader.style.display = 'none';
           animateHero();
-          animateNavbar();
+          setTimeout(() => {
+            animateNavbar();
+          }, 23000); // Delay navbar by 23 seconds
         }
       });
     }

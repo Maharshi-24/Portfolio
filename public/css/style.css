@@ -694,3 +694,12 @@ footer p {
   }
 }
 
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
